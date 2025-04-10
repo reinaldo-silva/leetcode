@@ -4,10 +4,10 @@ import (
 	"fmt"
 )
 
-func twoSum(nums []int, target int) []int {
+func twoSum(numbers []int, target int) []int {
 	hasher := make(map[int]int)
 
-	for index, num := range nums {
+	for index, num := range numbers {
 		if val, found := hasher[num]; found {
 			return []int{val, index}
 		}
